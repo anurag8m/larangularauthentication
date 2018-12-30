@@ -12,6 +12,7 @@ import { RequestResetComponent } from "./components/password/request-reset/reque
 import { ResponseResetComponent } from "./components/password/response-reset/response-reset.component";
 import { HttpClientModule } from "@angular/common/http";
 import { JarwisService } from "./Services/jarwis.service";
+import { TokenService } from "./Services/token.service";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { JarwisService } from "./Services/jarwis.service";
     ResponseResetComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
-  providers: [JarwisService],
+  providers: [JarwisService, TokenService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
