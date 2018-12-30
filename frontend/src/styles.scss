@@ -1,2 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+
+.ng-valid:not(form) {
+  border-left: solid 5px green;
+}
+.ng-invalid:not(form) {
+  border-left: solid 5px red;
+}
