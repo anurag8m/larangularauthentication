@@ -17,6 +17,7 @@ import { AuthService } from "./Services/auth.service";
 import { AfterLoginService } from "./Services/after-login.service";
 import { BeforeLoginService } from "./Services/before-login.service";
 import { SnotifyModule, SnotifyService, ToastDefaults } from "ng-snotify";
+import { NgxSpinnerModule } from "ngx-spinner";
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { SnotifyModule, SnotifyService, ToastDefaults } from "ng-snotify";
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    SnotifyModule
+    SnotifyModule,
+    NgxSpinnerModule
   ],
   providers: [
     JarwisService,
